@@ -1,79 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+        <link rel="icon" type="image/x-icon" class="js-site-favicon" href="">
         <title>First WebPage</title>
         <meta charset="UTF-8">
         <meta name="description" content="First website for CWEB1010">
         <meta name="keywords" content="HTML,CSS,JavaScript">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <!--Linkin in External Stylesheet-->
+        <link href="style.css" type="text/css" rel="stylesheet">
         <!--Internal Style Method-->
         <style>
-            body{
-                background-color: peachpuff;
-                background-image: url(http://prod.static.vikings.clubs.nfl.com/assets/img/bg/background.jpg);
+            h2{
+                color: orangeRed;
             }
-            h1{
-                color: aquamarine;
-                text-shadow: 2px 2px 1px black;
-            }
-            #container{
-                margin: auto;
-                width: 1040px;
-            }
-            #headstruct{
-                width: 100%;
-                height: 100px;
-                background-color: aquamarine;
-            }
-            #sidestruct{
-                background-color: orangered;
-                width: 200px;
-                height: 700px;
-                float: left;
-            }
-            #main{
-                float: left;
-                background-color: blue;
-                width: 840px;
-                height: 700px;
-            }
-            #foot{
-                background-color: green;
-                width: 100%;
-                height: 100px;
-                clear: both;
-
-            }
-
-
-
-
         </style>
     </head>
     <body>
-        <div id="container">
-            <header id="headstruct">
-                <div id="logo"><a href="index01.html"><img src="logo.jpg" width="100" alt="logo image"></a></div>
-                <nav>
-                    <ul>
-                        <li><a href="http://google.com">Home</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="http://www.espn.com/">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <aside id="sidestruct">
+        <h1>This is an h1 tag</h1>
+        <h2>This is an h2 tag</h2>
+        <!--Implementation of Inline CSS below-->
+        <h3 style="color: green;">This is an h3 tag</h3>
+        <h4>This is an h4 tag</h4>
 
-            </aside>
-            <main id="main">
-
-            </main>  
-            <footer id="foot">
-
-            </footer>
-        </div><!--Closing container tag-->
     </body>
 </html>
