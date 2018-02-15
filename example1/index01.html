@@ -8,6 +8,8 @@
         <meta name="keywords" content="HTML,CSS,JavaScript">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Incorporating Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600,900" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
         <!--Implementing Internal CSS-->
         <style>
@@ -41,11 +43,23 @@
             body{
                 background-color: black;
                 line-height:1;
+                font-family: 'aesthetik';
+                font-weight: 100;
                 
                 
             }
             nav ul {
                 list-style:none;
+            }
+            /**Incorporating the font into my css to be used**/
+            @font-face {
+                font-family: 'aesthetik';
+                src: url('fonts/aesthetik.eot'); /* IE9 Compat Modes */
+                src: url('fonts/aesthetik.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/aesthetik.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/aesthetik.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/aesthetik.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/aesthetik.svg#svgFontName') format('svg'); /* Legacy iOS */
             }
             h2{
                 color: #cd0000;
