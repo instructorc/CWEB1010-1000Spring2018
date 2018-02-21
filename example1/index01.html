@@ -2,10 +2,10 @@
 <html>
     <head>
         <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
-        <title>First WebPage</title>
+        <title>Superbowl Stats</title>
         <meta charset="UTF-8">
-        <meta name="description" content="First website for CWEB1000">
-        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="description" content="Superbowl stats site">
+        <meta name="keywords" content="Superbowl, superbowl data">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Incorporating Google Font-->
@@ -41,10 +41,7 @@
                 background:transparent;
             }
             body{
-                background-color: black;
-                line-height:1;
-                font-family: 'aesthetik';
-                font-weight: 100;
+              
                 
                 
             }
@@ -61,71 +58,27 @@
                     url('fonts/aesthetik.ttf')  format('truetype'), /* Safari, Android, iOS */
                     url('fonts/aesthetik.svg#svgFontName') format('svg'); /* Legacy iOS */
             }
-            h2{
-                color: #cd0000;
-            }
-
-            #imgborder{
-                border: solid 10px #333;
-            }
-
-            img[width="400"] {
-                border: solid 5px aquamarine;
-               
-                
-            }
-            img[width="400"]:hover {
-                border: dotted 12px purple;
-               
-                
-            }
-            img[width="500"]{
-                border: dashed 9px orangered;
-            }
-            img[src*=".jpg"]{
-                box-shadow: 4px 4px 3px #333;
-            }
-            a{
-                font-size: 38px;
-                width: 50px;
-                height: 50px;
-            }
-
-            a:link{
-                color: black;
-
-            }
-            a:visited{
-                color: aquamarine;
-            }
-            a:hover{
-                background-color: black;
-                color: white;
-            }
-            a:active{
-                color:red;
+            #headstruct{
+                border: 3px solid #000;
             }
 
         </style>
 
     </head>
     <body>
+        <header id="headstruct">
+            <div id="logo">SUPERBOWL DATA</div>
+            <nav>
+                <ul>
+                    <li>STATS</li>
+                    <li>RINGS</li>
+                    <li>WINNERS</li>
+                    <li>API</li>
+                </ul>
+            </nav>
+        </header>
 
-        <h1>Demonstrating our CSS implementation</h1>
-        <h2>This is an h2 tag</h2>
-        <!--CSS Implementation of Inline CSS method-->
-        <h3 style="color: green;">This is an h3 tag</h3>
-        <h4>This is an h4 tag</h4>
-        <a href="https://bostonglobe.com" ><img id="imgborder" src="news.jpg" alt="Picture of squirrel"></a>
 
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03552/potd-squirrel_ches_3552084k.jpg" width="500">
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03595/potd-seals_3595361k.jpg" width="500">
-        <img src="http://dailycandidnews.com/wp-content/uploads/squirrel.jpg" width="400">
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03586/potd-squirrel_3586186k.jpg" width="400">
-
-        <a href="http://google.com">Link for Google</a>
-        <a href="http://amazon.com">Link for Amazon</a>
-        <a href="http://ibm.com">Link for ibm</a>
 
 
     </body>
