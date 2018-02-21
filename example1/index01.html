@@ -8,6 +8,8 @@
         <meta name="keywords" content="HTML,CSS,JavaScript">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Incorporating Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
         <!--Linkin in External Stylesheet-->
         <link href="style.css" type="text/css" rel="stylesheet">
         <!--Internal Style Method-->
@@ -40,12 +42,31 @@
                 background:transparent;
             }
 
+            @font-face {
+            font-family: 'fish-chips';
+            src: url('fonts/fish-chips.eot'); /* IE9 Compat Modes */
+            src: url('fonts/fish-chips.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('fonts/fish-chips.woff2') format('woff2'), /* Super Modern Browsers */
+                url('fonts/fish-chips.woff') format('woff'), /* Pretty Modern Browsers */
+                url('fonts/fish-chips.ttf')  format('truetype'), /* Safari, Android, iOS */
+                url('fonts/fish-chips.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+
             body{
-                background-color: black;
+                
                 line-height:1;
+                font-family: 'fish-chips', Arial, Helvetica, sans-serif;
+                font-size: 36px;
             }
             nav ul {
                 list-style:none;
+            }
+
+            h2{
+                font-family: 'Cutive Mono', monospace;
+                font-size: 48px;
+                font-weight: bolder;
+                text-transform: lowercase;
             }
 
 
@@ -71,7 +92,10 @@
         </style>
     </head>
     <body>
+        <h1>This is my heading</h1>
+        <p>Paragraph text that will render the font selected.</p>
 
+        <h2>This is my h2 with the foot from Google</h2>
 
 
 
