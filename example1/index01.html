@@ -83,12 +83,47 @@
             }
             #banner{
                 border: 3px dotted blue;
+                width: 100%;
                 background-image: url(images/banner.png);
                 height: 650px;
                 margin-top: -80px;
             }
+           
+           /** Implemenation of layout using traditional float
+            #flexcontain{
+                width: 90%;
+              
+                border: 3px solid #333;
+                height: 800px;
+                margin: auto;
+            }
 
+            .headerbox{
+                width: 42%;
+                height: 500px;
+                border: 2px solid red;
+                float: left;
+                margin: 3em;
+            }
+            **/
 
+            /**Implementing CSS flexbox**/
+
+            #flexcontain{
+                width: 90%;
+                display: flex;
+                border: 3px solid #333;
+                height: 800px;
+                margin: auto;
+            }
+
+            .headerbox{
+                
+                height: 500px;
+                border: 2px solid red;
+                flex: 1 0 450px;
+                margin: 2em;
+            }
 
 
         </style>
@@ -106,13 +141,12 @@
             </nav>
         </header>
         <div id="banner">
+            <div id="flexcontain"> <!--Parent container-->
+                <div class="headerbox"></div> <!--Flex item -->
+                <div class="headerbox"></div> <!--Flex item -->
 
-
+            </div>
         </div>
-
-
-
-
 
     </body>
 </html>
