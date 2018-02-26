@@ -50,13 +50,31 @@
             }
             /**Incorporating the font into my css to be used**/
             @font-face {
-                font-family: 'aesthetik';
-                src: url('fonts/aesthetik.eot'); /* IE9 Compat Modes */
-                src: url('fonts/aesthetik.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                    url('fonts/aesthetik.woff2') format('woff2'), /* Super Modern Browsers */
-                    url('fonts/aesthetik.woff') format('woff'), /* Pretty Modern Browsers */
-                    url('fonts/aesthetik.ttf')  format('truetype'), /* Safari, Android, iOS */
-                    url('fonts/aesthetik.svg#svgFontName') format('svg'); /* Legacy iOS */
+                font-family: 'stratumno_heavy';
+                src: url('fonts/stratumno1-heavy.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-heavy.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-heavy.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+            @font-face {
+                font-family: 'stratumno_light';
+                src: url('fonts/stratumno1-light.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-light.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-light.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+            @font-face {
+                font-family: 'stratumno_thin';
+                src: url('fonts/stratumno1-thin.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-thin.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-thin.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-thin.svg#svgFontName') format('svg'); /* Legacy iOS */
             }
             #headstruct{
                 border: 3px solid #000;
@@ -65,22 +83,28 @@
             }
             #logo{
                 border: 3px solid green;
-                width: 200px;
+                width: 385px;
                 height: 75px;
+                color: #6c6c6c;
                 margin: .3em 2em;
                 float: left;
+                font-size: 3em;
+                font-family: 'stratumno_heavy', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             #navstruct{
                 border: 3px solid blue;
                 float: right;
-                margin: .3em 2em;
+                margin: .7em 2em;
                 width: 675px;
+                font-family: 'stratumno_light';
+                font-size: 2em;
             }
             #banner{
                 border: 3px solid orangered;
                 background-image: url(images/banner.png);
-                height: 650px;
+                height: 1000px;
                 margin-top: -85px;
+                background-size: cover;
             }
             #flexcontain{
                 display: flex;
@@ -90,6 +114,12 @@
                 border: 2px solid #333;
                 flex: 1 2 450px;
                 height: 400px;
+            }
+            li{
+                display: inline;
+                width: 165px;
+                margin:1em;
+                font-family: 'stratumno_light', Arial, Helvetica, sans-serif;
             }
 
 
