@@ -82,6 +82,16 @@
                 height: 650px;
                 margin-top: -85px;
             }
+            #flexcontain{
+                display: flex;
+                width: 100%;
+            }
+            .headerbox{
+                border: 2px solid #333;
+                flex: 1 2 450px;
+                height: 400px;
+            }
+
 
 
         </style>
@@ -99,8 +109,13 @@
                 </ul>
             </nav>
         </header>
+        <!-- Implementing CSS Flexbox-->
         <div id="banner">
+            <div id="flexcontain">
+                <div class="headerbox"></div>
+                <div class="headerbox"></div>
 
+            </div>
         </div>
 
 
