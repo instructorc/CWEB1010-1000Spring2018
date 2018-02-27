@@ -80,7 +80,9 @@
                 
                 height: 90px;
                 background: linear-gradient(#c2c1c1, #ffffff00);
-
+                clear: both;
+                float: left;
+                width: 100%;
             }
             #logo{
                 
@@ -102,19 +104,44 @@
             }
             #banner{
                 background-image: url(images/banner.png);
+                width: 100%;
                 height: 1000px;
                 background-size: cover;
                 color: #444;
             }
+            /**Implementing Traditional Float Layout
             #flexcontain{
-                display: flex;
-                width: 100%;
+                border: 2px solid green;
+                height: 775px;
+                width: 90%;
+                margin: auto;
             }
             .headerbox{
-                border: 2px solid orangered;
-                flex: 1 2 450px;
-                height: 400px;
+                border: 2px solid blue;
+                width: 500px;
+                margin: 2em;
+                height: 550px;
+                float: left;
             }
+
+
+            **/
+
+            /**Implementing flexbox**/
+            #flexcontain{
+                border: 2px solid blue;
+                width: 90%;
+                margin: auto;
+                height: 650px;
+                display:flex;
+            }
+            
+            .headerbox{
+                border: 2px solid #cd0000;
+                width: 700px;
+                height: 500px
+            }
+
             li{
                 display: inline;
                 margin:1em;
@@ -123,21 +150,22 @@
 
 
 
+
         </style>
 
     </head>
     <body>
         <div id="banner">
-        <header id="headstruct">
-                <div id="logo">SUPERBOWL DATA</div>
-                <nav id="navstruct">
-                    <ul>
-                        <li>STATS</li>
-                        <li>RINGS</li>
-                        <li>WINNERS</li>
-                        <li>API</li>
-                    </ul>
-                </nav>
+            <header id="headstruct">
+                    <div id="logo">SUPERBOWL DATA</div>
+                    <nav id="navstruct">
+                        <ul>
+                            <li>STATS</li>
+                            <li>RINGS</li>
+                            <li>WINNERS</li>
+                            <li>API</li>
+                        </ul>
+                    </nav>
             </header>
             <!-- Implementing CSS Flexbox-->
             <div id="flexcontain">
