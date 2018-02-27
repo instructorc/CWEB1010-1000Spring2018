@@ -77,22 +77,23 @@
                     url('fonts/stratumno1-thin.svg#svgFontName') format('svg'); /* Legacy iOS */
             }
             #headstruct{
-                border: 3px solid #000;
+                
                 height: 90px;
+                background: linear-gradient(#c2c1c1, #ffffff00);
 
             }
             #logo{
-                border: 3px solid green;
+                
                 width: 385px;
                 height: 75px;
-                color: #6c6c6c;
+                
                 margin: .3em 2em;
                 float: left;
                 font-size: 3em;
                 font-family: 'stratumno_heavy', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             #navstruct{
-                border: 3px solid blue;
+                
                 float: right;
                 margin: .7em 2em;
                 width: 675px;
@@ -100,26 +101,24 @@
                 font-size: 2em;
             }
             #banner{
-                border: 3px solid orangered;
                 background-image: url(images/banner.png);
                 height: 1000px;
-                margin-top: -85px;
                 background-size: cover;
+                color: #444;
             }
             #flexcontain{
                 display: flex;
                 width: 100%;
             }
             .headerbox{
-                border: 2px solid #333;
+                border: 2px solid orangered;
                 flex: 1 2 450px;
                 height: 400px;
             }
             li{
                 display: inline;
-                width: 165px;
                 margin:1em;
-                font-family: 'stratumno_light', Arial, Helvetica, sans-serif;
+                font-family: 'stratumno_heavy', Arial, Helvetica, sans-serif;
             }
 
 
@@ -128,19 +127,19 @@
 
     </head>
     <body>
-        <header id="headstruct">
-            <div id="logo">SUPERBOWL DATA</div>
-            <nav id="navstruct">
-                <ul>
-                    <li>STATS</li>
-                    <li>RINGS</li>
-                    <li>WINNERS</li>
-                    <li>API</li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Implementing CSS Flexbox-->
         <div id="banner">
+        <header id="headstruct">
+                <div id="logo">SUPERBOWL DATA</div>
+                <nav id="navstruct">
+                    <ul>
+                        <li>STATS</li>
+                        <li>RINGS</li>
+                        <li>WINNERS</li>
+                        <li>API</li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Implementing CSS Flexbox-->
             <div id="flexcontain">
                 <div class="headerbox"></div>
                 <div class="headerbox"></div>
