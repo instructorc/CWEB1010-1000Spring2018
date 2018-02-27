@@ -42,14 +42,33 @@
                 background:transparent;
             }
 
+            /**Incorporating the font into my css to be used**/
             @font-face {
-            font-family: 'fish-chips';
-            src: url('fonts/fish-chips.eot'); /* IE9 Compat Modes */
-            src: url('fonts/fish-chips.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-                url('fonts/fish-chips.woff2') format('woff2'), /* Super Modern Browsers */
-                url('fonts/fish-chips.woff') format('woff'), /* Pretty Modern Browsers */
-                url('fonts/fish-chips.ttf')  format('truetype'), /* Safari, Android, iOS */
-                url('fonts/fish-chips.svg#svgFontName') format('svg'); /* Legacy iOS */
+                font-family: 'stratumno_heavy';
+                src: url('fonts/stratumno1-heavy.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-heavy.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-heavy.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+            @font-face {
+                font-family: 'stratumno_light';
+                src: url('fonts/stratumno1-light.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-light.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-light.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+            @font-face {
+                font-family: 'stratumno_thin';
+                src: url('fonts/stratumno1-thin.eot'); /* IE9 Compat Modes */
+                src: url('fonts/stratumno1-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('fonts/stratumno1-thin.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('fonts/stratumno1-thin.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('fonts/stratumno1-thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+                    url('fonts/stratumno1-thin.svg#svgFontName') format('svg'); /* Legacy iOS */
             }
 
             body{
@@ -60,9 +79,11 @@
                 list-style:none;
             }
             #headstruct{
+                font-family: 'stratumno_heavy', Arial, Helvetica, sans-serif;
                 border: 4px solid #000;
                 width: 100%;
                 height: 85px;
+                background: linear-gradient(black, white);
 
 
             }
@@ -86,7 +107,7 @@
                 width: 100%;
                 background-image: url(images/banner.png);
                 height: 650px;
-                margin-top: -80px;
+                
             }
            
            /** Implemenation of layout using traditional float
@@ -129,18 +150,19 @@
         </style>
     </head>
     <body>
-        <header id="headstruct">
-            <div id="logo">SUPERBOWL DATA</div>
-            <nav id="navstruct">
-                <ul>
-                    <li>STATS</li>
-                    <li>RINGS</li>
-                    <li>WINNERS</li>
-                    <li>API</li>
-                </ul>
-            </nav>
-        </header>
+
         <div id="banner">
+            <header id="headstruct">
+                <div id="logo">SUPERBOWL DATA</div>
+                <nav id="navstruct">
+                    <ul>
+                        <li>STATS</li>
+                        <li>RINGS</li>
+                        <li>WINNERS</li>
+                        <li>API</li>
+                    </ul>
+                </nav>
+            </header>
             <div id="flexcontain"> <!--Parent container-->
                 <div class="headerbox"></div> <!--Flex item -->
                 <div class="headerbox"></div> <!--Flex item -->
