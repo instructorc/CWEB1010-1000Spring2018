@@ -155,7 +155,7 @@
             }
             
             .headerbox{
-                border: 3px solid red;
+               
                 flex: 1 0 400px;
                 height: 500px;
                 margin: 3em;
@@ -188,16 +188,52 @@
             }
             #newslettercontain{
                 width: 100%;
-                height: 400px;
+                height: 460px;
                 background-color: rgba(255,255, 255, .7);
                 margin-top: 12px;
             }
 
             form{
-                border: 2px solid black;
+               
                 width: 100%;
                 height: 350px;
 
+            }
+            #newslettercontain h1{
+                color: #1ba660;
+                text-align: center;
+                padding-top: .5em;
+            }
+            .inputstyle{
+                width: 400px;
+                height: 50px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 4px solid #333;
+                font-family: 'stratumno_thin';
+                font-size: 2.3em;
+                font-weight: 600;
+                line-height: 1.3;
+                word-spacing: 2px;
+                margin: .5em;
+            }
+            label{
+                font-family: 'stratumno_heavy';
+                font-size: 2em;
+                line-height: .9em;
+                text-transform: uppercase;
+                margin: 50px;
+            }
+            input[type="button"]{
+                background-color: #0095ff;
+                width: 400px;
+                margin-left: 6em;
+                height: 62px;
+                color: white;
+                font-family: 'stratumno_heavy';
+                text-transform: uppercase;
+                font-size: 2em;
+                border-radius: 10px;
             }
 
 
@@ -237,10 +273,11 @@
                     <div id="newslettercontain">
                         <h1>Sign-up for our Newsletter</h1>
                         <form>
-                            <label>Enter First Name:</label>
-                            <input type="text" placeholder="Enter name" maxlength="3"/><br/>
-                            <label>Enter email:</label>
-                            <input type="email" placeholder="Ex. jDoe@sample.com"/>
+                            <label>First Name:</label>
+                            <input type="text" name="firstname" class="inputstyle" required placeholder="Enter name" maxlength="3"/><br/>
+                            <label>Email:</label>
+                            <input type="email" name="email" class="inputstyle" placeholder="Ex. jDoe@sample.com"/><br>
+                            <input type="button" value="Submit">
 
                         </form>
          
