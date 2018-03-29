@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Incorporating Google Font-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600,900" rel="stylesheet">
+        <link href="sss.css" type="text/css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
         <!--Implementing Internal CSS-->
         <style>
@@ -314,6 +315,8 @@
 
 
         </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/sss.min.js"></script>
 
     </head>
     <body>
@@ -359,12 +362,18 @@
             </div>
         </div><!--Closing tag for banner-->
         <main id="main">
-
+            <div class="slider">
+                <img src="images/image1.JPG" /><img src="images/image2.jpg" /><div class="just_text">This one's just text.</div><img src="images/image3.jpg" /><div><img src="images/image4.jpg" /><span class="caption">This one has a caption</span></div>
+            </div>
 
 
         </main>
 
-
+        <script>
+                $('.slider').sss({
+                slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+                });
+        </script>
 
     </body>
 </html>
