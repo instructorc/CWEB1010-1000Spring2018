@@ -11,6 +11,7 @@
         <!--Incorporating Google font-->
         <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
         <!--Linking in External Stylesheet-->
+        <link href="css/sss.css" type="text/css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
         <!--Internal Style Method-->
         <style>
@@ -240,7 +241,7 @@
                 margin-left: 12%;
                 margin-top: 9%;
             }
-            #main{
+            .main{
               
                 width: 100%;
                 height: 750px;
@@ -336,6 +337,11 @@
 
 
         </style>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/sss.min.js"></script>
+        <script src="js/superslider.js" defer></script>
+
     </head>
     <body>
 
@@ -375,7 +381,7 @@
 
             </div>
         </div><!--closing banner tag-->
-        <main id="main">
+        <main class="main">
             <h1 style="margin-top: 1em; margin-bottom: 1em;">Click on one of the superbowls below:</h1>
             <div id="mainflex">
                 <section class="mainbox"></section>
@@ -399,7 +405,13 @@
                 <section class="mainbox"></section>
                 <section class="mainbox"></section>
             </div>
-            <img src="https://apod.nasa.gov/apod/image/1407/aurora_kwon_960.jpg" alt="northern lights"/>
+            <main class="main">
+                <div class="slider_one">
+                    <img src="images/image1.jpg" /><img src="images/image2.jpg" /><div class="just_text">This one's just text.</div><img src="images/image3.jpg" /><div><img src="images/image4.jpg" /><span class="caption">This one has a caption</span></div>
+                </div>
+
+            </main>
+            
 
 
         </main>
